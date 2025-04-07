@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import Link from 'next/link';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -74,14 +75,14 @@ const Navbar = () => {
         <div className={`${isOpen ? 'block' : 'hidden'} md:flex bg-[#2C315D] text-white container mx-auto py-3 px-16 dm:px-0`}>
           <div className="container mx-auto flex flex-col md:flex-row  justify-between px-4">
             <ul className="flex flex-col  dm:text-left md:flex-row md:space-x-6 space-y-2 md:space-y-0">
-              <li><a href="/" className="hover:underline">Home</a></li>
-              <li><a href="/anatomy" className="hover:underline">Anatomy</a></li>
-              <li><a href="#" className="hover:underline">Hospital</a></li>
-              <li><a href="#" className="hover:underline">College</a></li>
-              <li><a href="#" className="hover:underline">Students</a></li>
-              <li><a href="#" className="hover:underline">Committees</a></li>
-              <li><a href="#" className="hover:underline">Patients</a></li>
-              <li><a href="#" className="hover:underline">Contact Us</a></li>
+              <li><Link href="/" className="hover:underline">Home</Link></li>
+              <li><Link href="/page1" className="hover:underline">Anatomy</Link></li>
+              <li><Link href="#" className="hover:underline">Hospital</Link></li>
+              <li><Link href="#" className="hover:underline">College</Link></li>
+              <li><Link href="#" className="hover:underline">Students</Link></li>
+              <li><Link href="#" className="hover:underline">Committees</Link></li>
+              <li><Link href="#" className="hover:underline">Patients</Link></li>
+              <li><Link href="#" className="hover:underline">Contact Us</Link></li>
             </ul>
             <div className="hidden md:flex -my-3 -mr-20 pr-20 items-center bg-gray-200 p-2 ">
               <input
